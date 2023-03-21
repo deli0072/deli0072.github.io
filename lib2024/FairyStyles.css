@@ -1,0 +1,78 @@
+body {
+  background-image: url("dreamy-dandelions-blowball-flowers-against-sunset-pastel-golden-toned-macro-soft-focus-delicate-transparent-airy-elegant-126223709.jpg"); 
+  background-color: #DDA0DD;
+  height: 100px;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+ }
+
+div {
+  width: 800px;
+  padding: 8px;
+  border: 5px solid gray;
+  margin: 0; 
+}
+
+h1 {text-align: center;
+}
+
+.title {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-container {
+  height: 500px;
+  width: 800px;
+  position: relative;
+}
+.image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.transition-image {
+  position: absolute;
+  top: 0px;
+  left:0px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.transition-image:hover {
+  opacity: 1;
+}
+
+.fade::after{
+    content: "The fae are all around";
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade:hover::after {
+  opacity: 0.5;
+}
+p {
+   color: black;
+   font-size: 26px;
+   font-style: italic
+}
